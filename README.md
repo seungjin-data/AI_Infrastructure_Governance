@@ -1,5 +1,5 @@
 # Governing AI Infrastructure Expansion
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18586889.svg)](https://doi.org/10.5281/zenodo.18586889)
 **Governance architecture, risk redistribution, and policy responses across 25 jurisdictions (2019–2026)**
 
 Submitted to *Environmental Innovation and Societal Transitions* (EIST)
@@ -55,7 +55,7 @@ AI_Infrastructure_Governance_EIST/
 ### Setup
 
 ```bash
-git clone https://github.com/[username]/AI_Infrastructure_Governance_EIST.git
+git clone https://github.com/seungjin-data/AI_Infrastructure_Governance_EIST.git
 cd AI_Infrastructure_Governance_EIST
 pip install -r requirements.txt
 ```
@@ -104,7 +104,7 @@ Records the primary-source textual clause supporting each `Redistribution_Type` 
 
 If you use this dataset or code, please cite:
 
-> Kim, S. (2026). Governing AI infrastructure expansion: Governance architecture, risk redistribution, and policy responses across 25 jurisdictions (2019–2026). *Environmental Innovation and Societal Transitions*. [DOI to be assigned]
+> Kim, S. (2026). Governing AI infrastructure expansion: Governance architecture, risk redistribution, and policy responses across 25 jurisdictions (2019–2026). *Environmental Innovation and Societal Transitions*. (https://doi.org/10.5281/zenodo.18586889)
 
 ## License
 
