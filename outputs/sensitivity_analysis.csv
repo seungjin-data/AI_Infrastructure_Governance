@@ -1,0 +1,9 @@
+Metric,Full_Sample,Sensitivity
+N,144,121
+Excluded,0,23
+Chi_square,131.79,112.26
+p_value,<.001,<.001
+Cramers_V,0.676,0.681
+Constraint_Spatial_pct,88.4,86.7
+Facilitation_Sectoral_pct,86.5,88.9
+Steering_Temporal_pct,56.2,56.4

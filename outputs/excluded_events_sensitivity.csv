@@ -1,0 +1,24 @@
+Event_ID,Year,Jurisdiction,Policy_Type,Gov_Architecture,Redistribution_Type
+V-004,2021,Ireland,Grid_Restriction,Constraint,Sectoral
+V-023,2024,Prince William County,Legal_Challenge,Constraint,Spatial
+V-039,2025,US,Advocacy,Constraint,Spatial
+V-040,2025,US,Advocacy,Constraint,Spatial
+V-046,2026,Virginia,Moratorium_Bill,Constraint,Spatial
+V-049,2024,Burns Harbor,Project_Withdrawal,Constraint,Spatial
+V-053,2022,Netherlands,Policy_Framework,Steering,Temporal
+V-071,2025,Prince George's County,Moratorium,Constraint,Spatial
+V-072,2025,San Marcos,Project_Pause,Constraint,Spatial
+V-073,2025,Tucson,Project_Opposition,Constraint,Spatial
+V-074,2025,Birmingham,Moratorium_Proposed,Constraint,Spatial
+V-075,2025,Howell,Moratorium,Constraint,Spatial
+V-077,2025,US,Legislation,Steering,Temporal
+V-095,2025,London,Project_Opposition,Constraint,Spatial
+V-096,2025,Scotland,Moratorium_Proposed,Constraint,Spatial
+V-104,2025,Australia,Nuclear_Policy,Steering,Temporal
+V-112,2025,Ontario,Legislation,Steering,Temporal
+V-113,2025,Alberta,Legislation,Steering,Temporal
+V-117,2025,China,Nuclear_Policy,Facilitation,Temporal
+V-119,2025,China,National_Strategy,Steering,Sectoral
+V-132,2025,Israel,National_Strategy,Steering,Sectoral
+V-134,2025,Spain,Regulatory_Framework,Steering,Sectoral
+V-155,2025,EU,National_Strategy,Steering,Spatial
