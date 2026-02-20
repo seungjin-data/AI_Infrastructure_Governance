@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18586889.svg)](https://doi.org/10.5281/zenodo.18586889)
 **Governance architecture, risk redistribution, and policy responses across 25 jurisdictions (2019–2026)**
 
-Submitted to *Environmental Innovation and Societal Transitions* (EIST)
+Submitted to *Technological Forecasting and Social Change* (TFSC)
 
 ---
 
@@ -21,10 +21,10 @@ This repository contains the complete dataset and replication materials for the 
 ## Repository Structure
 
 ```
-AI_Infrastructure_Governance_EIST/
+AI_Infrastructure_Governance/
 │
 ├── data/
-│   ├── work_db_v5_EIST_FINAL.csv      # Verified dataset (N = 144)
+│   ├── work_db_v5_FINAL.csv     # Verified dataset (N = 144)
 │   └── coding_log_v5.csv              # Coding decision log
 │
 ├── code/
@@ -55,8 +55,8 @@ AI_Infrastructure_Governance_EIST/
 ### Setup
 
 ```bash
-git clone https://github.com/seungjin-data/AI_Infrastructure_Governance_EIST.git
-cd AI_Infrastructure_Governance_EIST
+git clone https://github.com/seungjin-data/AI_Infrastructure_Governance.git
+cd  AI_Infrastructure_Governance
 pip install -r requirements.txt
 ```
 
@@ -78,7 +78,7 @@ Sensitivity (enacted only, N = 121): V = 0.681
 
 ## Dataset Description
 
-### work_db_v5_EIST_FINAL.csv
+### work_db_v5_FINAL.csv
 
 | Column | Description |
 |---|---|
@@ -104,7 +104,7 @@ Records the primary-source textual clause supporting each `Redistribution_Type` 
 
 If you use this dataset or code, please cite:
 
-> Kim, S. (2026). Governing AI infrastructure expansion: Governance architecture, risk redistribution, and policy responses across 25 jurisdictions (2019–2026). *Environmental Innovation and Societal Transitions*. (https://doi.org/10.5281/zenodo.18586889)
+> Kim, S. (2026). Governance architectures of AI infrastructure expansion: How policy instruments shape distributional patterns across 25 jurisdictions (2019–2026). *Technological Forecasting and Social Change*. (https://doi.org/10.5281/zenodo.18586889)
 
 ## License
 
