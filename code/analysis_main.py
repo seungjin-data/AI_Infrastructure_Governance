@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
 Replication script for:
-"Governing AI infrastructure expansion: Governance architecture, risk redistribution,
-and policy responses across 25 jurisdictions (2019-2026)"
+"Governance architectures of AI infrastructure expansion: How policy instruments
+shape energy redistribution and distributional consequences across 25 jurisdictions
+(2019-2026)"
 
-Submitted to Environmental Innovation and Societal Transitions (EIST)
+Submitted to Energy Research & Social Science (ERSS-D-26-00897)
 
 Author: Seungjin Kim, Ph.D.
 Affiliation: Graduate School of AI Convergence Engineering, aSSIST University
 Contact: d.eng.kim@stud.assist.ac.kr
 
 Usage:
-    cd AI_Infrastructure_Governance_EIST
+    cd AI_Infrastructure_Governance
     python code/analysis_main.py
 
 All outputs are saved to the outputs/ directory.
@@ -30,7 +31,7 @@ warnings.filterwarnings('ignore')
 # =================================================================
 # Configuration
 # =================================================================
-DATA_PATH = os.path.join("data", "work_db_v5_EIST_FINAL.csv")
+DATA_PATH = os.path.join("data", "work_db_v5_FINAL.csv")
 OUTPUT_DIR = "outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -38,7 +39,7 @@ ARCH_ORDER = ['Facilitation', 'Constraint', 'Steering']
 REDIST_ORDER = ['Sectoral', 'Spatial', 'Temporal']
 
 print("=" * 65)
-print("EIST Replication Script - Full Analysis")
+print("ERSS Replication Script - Full Analysis (ERSS-D-26-00897)")
 print("=" * 65)
 
 # =================================================================
@@ -155,10 +156,10 @@ print(f"  National -> Facilitation:  {table4_pct.loc['National', 'Facilitation']
 table4.to_csv(os.path.join(OUTPUT_DIR, "table4_multilevel_distribution.csv"))
 
 # =================================================================
-# Figure 1: Heatmap
+# Figure 3: Heatmap (governance architecture x redistribution type)
 # =================================================================
 print("\n" + "-" * 65)
-print("Figure 1: Heatmap")
+print("Figure 3: Heatmap")
 print("-" * 65)
 
 fig, ax = plt.subplots(figsize=(8, 6))
@@ -170,13 +171,13 @@ ax.set_title("Governance Architecture x Redistribution Type (N=144)",
 ax.set_xlabel("Redistribution Type", fontsize=11, labelpad=10)
 ax.set_ylabel("Governance Architecture", fontsize=11, labelpad=10)
 plt.tight_layout()
-plt.savefig(os.path.join(OUTPUT_DIR, "figure1_heatmap.png"),
+plt.savefig(os.path.join(OUTPUT_DIR, "figure3_heatmap.png"),
             dpi=300, bbox_inches='tight')
-plt.savefig(os.path.join(OUTPUT_DIR, "figure1_heatmap.tiff"),
+plt.savefig(os.path.join(OUTPUT_DIR, "figure3_heatmap.tiff"),
             dpi=600, bbox_inches='tight')
 plt.close()
-print(f"Saved: {OUTPUT_DIR}/figure1_heatmap.png (300dpi)")
-print(f"Saved: {OUTPUT_DIR}/figure1_heatmap.tiff (600dpi)")
+print(f"Saved: {OUTPUT_DIR}/figure3_heatmap.png (300dpi)")
+print(f"Saved: {OUTPUT_DIR}/figure3_heatmap.tiff (600dpi)")
 
 # =================================================================
 # Sensitivity Analysis: Excluding non-enacted / proposed events
