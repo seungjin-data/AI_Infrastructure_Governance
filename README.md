@@ -1,14 +1,14 @@
 # Governing AI Infrastructure Expansion
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18586889.svg)](https://doi.org/10.5281/zenodo.18586889)
-**Governance architecture, risk redistribution, and policy responses across 25 jurisdictions (2019–2026)**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18713056.svg)](https://doi.org/10.5281/zenodo.18713056)
+**Governance architecture, energy redistribution, and policy responses across 25 jurisdictions (2019–2026)**
 
-Submitted to *Technological Forecasting and Social Change* (TFSC)
+Submitted to *Energy Research & Social Science* (ERSS-D-26-00897)
 
 ---
 
 ## Overview
 
-This repository contains the complete dataset and replication materials for the above-titled manuscript. The study constructs and analyzes a manually verified database of **144 policy events** across **25 governance entities** (24 national-level jurisdictions and the EU) and 32 subnational jurisdictions (2019–2026), examining the relationship between governance architecture and risk redistribution in AI-driven data center infrastructure expansion.
+This repository contains the complete dataset and replication materials for the above-titled manuscript. The study constructs and analyzes a manually verified database of **144 policy events** across **25 governance entities** (24 national-level jurisdictions and the EU) and 32 subnational jurisdictions (2019–2026), examining the relationship between governance architecture and energy redistribution in AI-driven data center infrastructure expansion.
 
 ## Key Findings
 
@@ -19,12 +19,11 @@ This repository contains the complete dataset and replication materials for the 
 - Sensitivity analysis excluding non-enacted events (N=121): V = 0.681 (direction unchanged)
 
 ## Repository Structure
-
 ```
 AI_Infrastructure_Governance/
 │
 ├── data/
-│   ├── work_db_v5_FINAL.csv     # Verified dataset (N = 144)
+│   ├── work_db_v5_FINAL.csv           # Verified dataset (N = 144)
 │   └── coding_log_v5.csv              # Coding decision log
 │
 ├── code/
@@ -35,8 +34,14 @@ AI_Infrastructure_Governance/
 │   ├── table2_annual_distribution.csv
 │   ├── table3_architecture_redistribution.csv
 │   ├── table4_multilevel_distribution.csv
-│   ├── figure1_heatmap.png
-│   ├── figure1_heatmap.tiff
+│   ├── figure1_geographic_distribution.png
+│   ├── figure1_geographic_distribution.tiff
+│   ├── figure2_temporal_distribution.png
+│   ├── figure2_temporal_distribution.tiff
+│   ├── figure3_heatmap.png
+│   ├── figure3_heatmap.tiff
+│   ├── figure4_multilevel_governance.png
+│   ├── figure4_multilevel_governance.tiff
 │   ├── sensitivity_analysis.csv
 │   └── excluded_events_sensitivity.csv
 │
@@ -44,6 +49,15 @@ AI_Infrastructure_Governance/
 ├── requirements.txt
 └── LICENSE
 ```
+
+## Figure Guide
+
+| Figure | Content | Manuscript Section |
+|--------|---------|-------------------|
+| Figure 1 | Geographic distribution of governance architectures (25 jurisdictions) | Section 4.1 |
+| Figure 2 | Annual distribution of policy events by governance architecture (2019–2026) | Section 4.2 |
+| Figure 3 | Heatmap: governance architecture × redistribution type | Section 4.3 |
+| Figure 4 | Governance architecture distribution by governance level | Section 5.2 |
 
 ## Reproduction Instructions
 
@@ -53,23 +67,20 @@ AI_Infrastructure_Governance/
 - Required packages: `pandas`, `scipy`, `seaborn`, `matplotlib`, `numpy`
 
 ### Setup
-
 ```bash
 git clone https://github.com/seungjin-data/AI_Infrastructure_Governance.git
-cd  AI_Infrastructure_Governance
+cd AI_Infrastructure_Governance
 pip install -r requirements.txt
 ```
 
 ### Run
-
 ```bash
 python code/analysis_main.py
 ```
 
-All reported tables (1–4), Figure 1, and the sensitivity analysis will be regenerated automatically in the `outputs/` directory.
+All reported tables (1–4), Figures 1–4, and the sensitivity analysis will be regenerated automatically in the `outputs/` directory.
 
 ### Expected Output
-
 ```
 Chi-square: chi2(4, N = 144) = 131.79, p < .001
 Cramers V: 0.676
@@ -93,7 +104,7 @@ Sensitivity (enacted only, N = 121): V = 0.681
 | Source_URL | URL of primary source documentation |
 | Verification_Status | Verification outcome (Verified) |
 | Macro_Category | Policy macro-category (6 types) |
-| Redistribution_Type | Risk redistribution dimension (Spatial / Sectoral / Temporal) |
+| Redistribution_Type | Energy redistribution dimension (Spatial / Sectoral / Temporal) |
 | Gov_Architecture | Governance architecture (Constraint / Facilitation / Steering) |
 
 ### coding_log_v5.csv
@@ -104,7 +115,7 @@ Records the primary-source textual clause supporting each `Redistribution_Type` 
 
 If you use this dataset or code, please cite:
 
-> Kim, S. (2026). Governance architectures of AI infrastructure expansion: How policy instruments shape distributional patterns across 25 jurisdictions (2019–2026). *Technological Forecasting and Social Change*. (https://doi.org/10.5281/zenodo.18586889)
+> Kim, S. (2026). Governance architectures of AI infrastructure expansion: How policy instruments shape energy redistribution and distributional consequences across 25 jurisdictions (2019–2026). *Energy Research & Social Science*. https://doi.org/10.5281/zenodo.18713056
 
 ## License
 
